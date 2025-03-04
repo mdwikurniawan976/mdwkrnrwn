@@ -52,8 +52,8 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatem earum incidunt fugiat quo quos.
+                I'm always open to new opportunities, collaborations, and
+                exciting projects. Let's create something amazing together!
               </p>
 
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -81,21 +81,25 @@ const Contact = () => {
                 placeholder="Type your message here."
               ></Textarea>
 
-              <Button size = "md" className = "max-w-40">Send message</Button>
+              <Button size="md" className="max-w-40">
+                Send message
+              </Button>
             </form>
           </div>
           <div className="flex items-center flex-1 order-1 mb-8 xl:justify-end xl:order-none xl:mb-0">
             <ul className="flex flex-col gap-10">
-              {info.map((item,index)=>{
-                return <li key={index} className="flex items-center gap-6">
-                  <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                    <div className="text-[28px]">{item.icon}</div>
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-white/60">{item.title}</p>
-                    <h3 className="text-xl">{item.description}</h3>
-                  </div>
-                </li>
+              {info.map((item, index) => {
+                return (
+                  <li key={index} className="flex items-center gap-6">
+                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                      <div className="text-[28px]">{item.icon}</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-white/60">{item.title}</p>
+                      <h3 className="text-xl">{item.description}</h3>
+                    </div>
+                  </li>
+                );
               })}
             </ul>
           </div>

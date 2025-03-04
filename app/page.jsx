@@ -7,6 +7,7 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
+import Chat from "@/components/chat";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
           <div className="order-2 text-center xl:text-left xl:order-none ">
             <span className="text-xl">Software Developer</span>
             <h1 className="mb-6 h1">
-              Hello
+              Hello,
               <span className="text-accent">
                 <Typewriter
                   words={[" I am Dwi Kurniawan", " A Junior Developer"]}
@@ -30,7 +31,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences an I am proficient
+              I excel at crafting elegant digital experiences and I am proficient
               in various programming languages and technologies.
             </p>
             <div className="flex flex-col items-center gap-8 xl:flex-row">
@@ -55,6 +56,7 @@ const Home = () => {
           <div className="order-1 mb-8 xl:order-none xl:mb-0">
             <Photo />
           </div>
+           
         </div>
       </div>
       <Stats />
